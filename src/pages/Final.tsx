@@ -2,7 +2,6 @@ import React from 'react';
 import Creator from '../components/Creator.tsx';
 
 const Final: React.FC = () => {
-    // Page for finals, Starts with 8 players on the left side 2 against 2, then 4 players on the right side 2 against 2, then 2 players on the right side 1 against 1 with the lines of the court and Creator component to add each of the 8 starting players
     return (
         <>
         <img className="absolute top-0 h-full w-full opacity-70" src="/trophy.jpeg" />
@@ -85,7 +84,6 @@ const Final: React.FC = () => {
                     <div className='w-full h-full border-b-2 border-black'></div>
                 </div>
             </div>
-            {/* <div className='absolute w-full h-full border-white'></div> */}
         </div>
         </>
     )

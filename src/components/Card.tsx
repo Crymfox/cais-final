@@ -12,10 +12,6 @@ interface CardProps {
 }
 
 const Card: React.FC<CardProps> = ({ imageSrc, title, score, onChangeFunction, rank, onBlurFunction, onDeleteFunction, final }) => {
-    // const [score, setScore] = useState(0);
-    // const handleOnChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    //     setScore(Number(event.target.value));
-    // }
     return (
         <div className={`flex items-center ${rank == 1 ? "bg-yellow-500/40" : rank == 2 ? "bg-gray-300/50" : rank == 3 ? "bg-amber-700/40" : rank! <= 8 ? "bg-green-300/50" : final ? "bg-blue-500" : "bg-blue-500/50"} rounded-lg shadow-lg p-2 relative ${final ? "max-w-[14rem]" : ""}`}>
             <img src={imageSrc} alt={title} className="w-16 h-16 rounded-full mr-4" />
