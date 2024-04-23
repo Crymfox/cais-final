@@ -25,13 +25,11 @@ const Card: React.FC<CardProps> = ({ imageSrc, title, score, onChangeFunction, r
                     onBlur={onBlurFunction}
                 />}
             </div>
-            {/* the rank badge in the end of the card */}
             {!final && <div className={` absolute right-3 flex items-center justify-center text-gray-800 ${rank! > 3 ? "border-2 border-gray-800" : ""} px-2 rounded-full font-bold text-3xl`}>
                 {
                     rank == 1 ? "🥇" : rank == 2 ? "🥈" : rank == 3 ? "🥉" : rank
                 }
             </div>}
-            {/* absolute button labeled "x" on the right top to delete the card that is visible only when you hover on it */}
             <button
                 className="absolute top-0 right-0 p-1 hover:text-red-500 text-transparent"
                 title="Delete"
